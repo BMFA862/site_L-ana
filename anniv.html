@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png" type="image/x-png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyeux Anniversaire ! 🎉 | Espace Vœux</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Styles personnalisés -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Arrière-plan lumineux et ambiant -->
+  <div class="ambient-glow">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- Barre de Navigation -->
+  <nav class="navbar navbar-expand-lg position-relative z-2 py-3 px-3 px-md-5">
+    <div class="container-fluid glass-panel py-2 px-3">
+      <a class="navbar-brand text-dark fw-bold d-flex align-items-center gap-2" href="anniv.html">
+        <span class="fs-4">🎂</span>
+        <span class="festive-title text-gradient">Birthday Edition</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button id="confettiBtn" class="btn btn-glass btn-sm d-none d-sm-inline-flex" title="Lancer des confettis">
+          <i class="bi bi-balloon-fill text-gold"></i> Confettis !
+        </button>
+        <a href="jeu.html" class="btn btn-festive btn-sm fw-semibold">
+          <i class="bi bi-controller"></i> Le Mini-Jeu
+        </a>
+        <a href="index.html" class="btn btn-outline-secondary btn-sm rounded-circle p-2" title="Déconnexion / Portail">
+          <i class="bi bi-box-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenu Principal -->
+  <main class="container position-relative z-1 py-4 py-md-5">
+    
+    <!-- Hero Section -->
+    <section class="text-center py-4 py-md-5 fade-in-up">
+      <div class="mb-3">
+        <span class="badge-vip">
+          <i class="bi bi-award-fill"></i> Journée Officielle de Célébration
+        </span>
+      </div>
+
+      <h1 class="display-3 fw-bold mb-3 text-dark">
+        Joyeux Anniversaire <span class="friend-name text-gradient">Léana</span> ! ✨
+      </h1>
+      
+      <p class="lead text-secondary mx-auto" style="max-width: 680px;">
+        Aujourd'hui est un jour très spécial ! Cette page a été créée sur mesure pour célébrer cette nouvelle année pleine de bonheur, de projets et de fous rires.
+      </p>
+
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+        <a href="#letterSection" class="btn btn-festive">
+          <i class="bi bi-envelope-heart me-1"></i> Ouvrir ta Lettre
+        </a>
+        <a href="jeu.html" class="btn btn-festive-gold">
+          <i class="bi bi-joystick me-1"></i> Découvrir le Mini-Jeu 🎁
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 1 : La Lettre Secrète d'Anniversaire -->
+    <section id="letterSection" class="my-5 fade-in-up">
+      <div class="text-center mb-4">
+        <h2 class="h3 fw-bold text-dark"><i class="bi bi-envelope-paper-heart text-pink me-2"></i>Un Message Rien Que Pour Toi</h2>
+        <p class="text-muted small">Clique sur l'enveloppe ci-dessous pour révéler son contenu secret.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div id="envelopeCard" class="envelope-card text-center">
+            
+            <div class="wax-seal">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            
+            <h3 class="h4 fw-bold mb-2 text-dark">À notre amie formidable <span class="friend-name text-pink">Léana</span></h3>
+            <p id="envelopePrompt" class="text-muted small mb-0">
+              <i class="bi bi-envelope-heart-fill text-danger me-1"></i> Clique sur l'enveloppe pour déplier ton mot spécial
+            </p>
+
+            <!-- Contenu de la lettre dépliable -->
+            <div id="letterContent" class="d-none mt-4 text-start p-4 rounded-4" style="background: #ffffff; color: #1e1b4b; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+              <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                <span class="badge bg-danger bg-opacity-10 text-danger fw-bold">Édition Exclusive Anniversaire</span>
+                <span class="text-muted small"><i class="bi bi-calendar-event me-1"></i>Jour de fête</span>
+              </div>
+              
+              <div class="note-handwritten">
+                Chère <span class="friend-name fw-bold">Léana</span>,<br><br>
+                En ce jour si particulier, je tenais à prendre un petit moment pour te souhaiter un <strong>joyeux et merveilleux anniversaire !</strong> 🎉<br><br>
+                Toujours prête à partager un éclat de rire et à rendre chaque instant plus lumineux, tu es vraiment une fille géniale !<br><br>
+                Que cette nouvelle année de vie t'apporte tout ce dont tu rêves, d'incroyables réussites, des opportunités passionnantes, et surtout une santé de fer et du bonheur à foison.<br><br>
+                Prends soin de toi, profite à fond de ta journée et continue de rayonner comme tu le fais si bien ! ✨💖
+              </div>
+
+              <div class="text-end mt-4 pt-3 border-top">
+                <p class="festive-title fs-5 mb-0 text-dark">Ton mentaliste qui t'as dit un jour "le sol ... c'est dur !",</p>
+                <small class="text-muted">Ton ami & développeur officiel de ta surprise</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 : Les Pépites de notre amitié (Polaroid Memories) -->
+    <section class="my-5 py-4">
+      <div class="text-center mb-5">
+        <h2 class="h3 fw-bold text-dark"><i class="bi bi-stars text-gradient me-2"></i>Tu es ... Unique !</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Carte 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="polaroid-card" style="--rotation: 2deg;">
+            <div class="polaroid-img-box" style="background: linear-gradient(135deg, #fbcfe8 0%, #ffe4e6 100%);">
+              😂
+            </div>
+            <h5 class="fw-bold mb-1">Rires Incontrôlables</h5>
+            <p class="text-secondary small mb-0">Ces moments où l'on rigole pour un rien jusqu'à en avoir mal aux joues !</p>
+          </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="polaroid-card" style="--rotation: -1.5deg;">
+            <div class="polaroid-img-box" style="background: linear-gradient(135deg, #ccfbf1 0%, #bfdbfe 100%);">
+              ✨
+            </div>
+            <h5 class="fw-bold mb-1">Énergie Positive</h5>
+            <p class="text-secondary small mb-0">Un véritable rayon de soleil qui illumine la journée de tout le monde.</p>
+          </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="polaroid-card" style="--rotation: 2deg;">
+            <div class="polaroid-img-box" style="background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);">
+              👑
+            </div>
+            <h5 class="fw-bold mb-1">Reine de la Journée</h5>
+            <p class="text-secondary small mb-0">Aujourd'hui tout est permis, surtout les doubles parts de gâteau !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 : Les Stats Spéciales de la Star -->
+    <section class="my-5">
+      <div class="glass-panel p-4 p-md-5">
+        <h3 class="h4 text-center fw-bold mb-4 text-dark">
+          <i class="bi bi-speedometer2 me-2 text-pink"></i>Le Tableau de Bord Officiel de la Star
+        </h3>
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="game-stat-box">
+              <div class="display-6 fw-bold text-gold">100%</div>
+              <div class="small text-muted mt-1 fw-medium">Rayonnement & Bonne Humeur</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="game-stat-box">
+              <div class="display-6 fw-bold text-pink">∞</div>
+              <div class="small text-muted mt-1 fw-medium">Souvenirs Mémorables</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="game-stat-box">
+              <div class="display-6 fw-bold text-cyan">365</div>
+              <div class="small text-muted mt-1 fw-medium">Nouveaux Jours d'Aventures</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="game-stat-box">
+              <div class="display-6 fw-bold text-warning">⭐ 5/5</div>
+              <div class="small text-muted mt-1 fw-medium">Une super amie</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 : Générateur de Vœu Instantané -->
+    <section class="my-5 text-center">
+      <div class="glass-panel p-4 p-md-5 mx-auto" style="max-width: 650px;">
+        <h3 class="h4 fw-bold mb-3 text-dark">
+          <i class="bi bi-magic text-pink me-2"></i>La Machine à Vœux d'Anniversaire
+        </h3>
+        <p class="text-muted small mb-4">
+          Tire une prédiction magique pour ton année à venir !
+        </p>
+        
+        <div id="wishDisplay" class="p-3 mb-4 rounded-4 fw-semibold transition-all shadow-sm" 
+             style="background: #ffffff; border: 1px solid rgba(226, 232, 240, 0.9); min-height: 70px; display: flex; align-items: center; justify-content: center; color: #1e1b4b;">
+          Clique sur le bouton ci-dessous pour déclencher un vœu magique ! ✨
+        </div>
+
+        <button id="wishBtn" class="btn btn-glass">
+          <i class="bi bi-dice-5-fill text-gold me-1"></i> Découvrir un nouveau vœu
+        </button>
+      </div>
+    </section>
+
+    <!-- Section 5 : Appel à l'action vers le Mini-Jeu (Page 3) -->
+    <section class="my-5 py-3">
+      <div class="glass-panel p-4 p-md-5 text-center pulse-glow position-relative overflow-hidden" 
+           style="background: linear-gradient(135deg, rgba(254, 242, 242, 0.95) 0%, rgba(245, 243, 255, 0.95) 100%); border: 2px solid rgba(244, 63, 94, 0.25);">
+        
+        <div class="mb-3">
+          <span class="badge-vip">
+            <i class="bi bi-joystick"></i> Mini-Jeu Exclusif
+          </span>
+        </div>
+
+        <h2 class="display-5 fw-bold mb-3 text-dark">
+          Prête pour ta Mission Anniversaire ? 🎁
+        </h2>
+        
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 620px;">
+          Un mini-jeu d'arcade a été spécialement programmé pour ton anniversaire ! Attrape les cadeaux qui tombent du ciel, récolte les parts de gâteau et débloque le <strong>Trophée d'Honneur</strong> !
+        </p>
+
+        <a href="jeu.html" class="btn btn-festive btn-lg px-5 py-3 fw-bold fs-5">
+          <i class="bi bi-play-circle-fill me-2 fs-4"></i> Lancer le Mini-Jeu d'Anniversaire
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bouton Flottant Musique Festive -->
+  <button id="musicToggleBtn" class="music-toggle-btn" title="Lancer la musique d'anniversaire">
+    <i class="bi bi-music-note-beamed"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 border-top border-secondary border-opacity-10 text-muted small position-relative z-1">
+    <div class="container">
+      <p class="mb-1">Conçu avec toute mon amitié pour l'anniversaire de <span class="friend-name text-dark fw-bold">Léana</span> 💖</p>
+      <p class="opacity-75 mb-0">Tous droits réservés aux rires, aux gâteaux et à la fête !</p>
+    </div>
+  </footer>
+
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Anniversaire -->
+  <script src="js/anniv.js"></script>
+</body>
+</html>
