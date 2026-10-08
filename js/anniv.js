@@ -2,9 +2,8 @@
  * LOGIQUE ET INTERACTIONS DE LA PAGE ANNIVERSAIRE (anniv.html)
  */
 
-// Lecteur audio pour la musique d'anniversaire (fichier MP3)
-const birthdayAudio = new Audio('musicanniv.mp3');
-birthdayAudio.loop = true;
+// Le fichier audio est déclaré dans anniv.html
+const birthdayAudio = document.getElementById('birthdayAudio');
 
 function updateMusicButton(isPlaying) {
   const musicBtn = document.getElementById('musicToggleBtn');
@@ -33,6 +32,15 @@ function toggleMusic() {
     });
   }
 }
+
+// Synchroniser le bouton avec la lecture, y compris le démarrage HTML (autoplay).
+birthdayAudio.addEventListener('play', () => {
+  updateMusicButton(true);
+});
+
+birthdayAudio.addEventListener('pause', () => {
+  updateMusicButton(false);
+});
 
 // Réinitialiser le bouton si la musique se termine (au cas où loop est désactivé)
 birthdayAudio.addEventListener('ended', () => {
